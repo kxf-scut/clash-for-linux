@@ -1,4 +1,4 @@
-# Linux 一键安装 Clash
+# Linux 安装 Clash
 
 ## 快速开始
 
