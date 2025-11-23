@@ -156,9 +156,11 @@ sudo bash uninstall.sh
 - [Clash 家族下载](https://www.clash.la/releases/)
 - [Clash Premium](https://downloads.clash.wiki/ClashPremium/)
 - [mihomo](https://github.com/MetaCubeX/mihomo)
+- [clash-for-linux-install]https://github.com/nelvko/clash-for-linux-install
 - [subconverter: 订阅转换](https://github.com/tindy2013/subconverter)
 - [yacd: Web 控制台](https://github.com/haishanh/yacd)
 - [yq: 处理 yaml](https://github.com/mikefarah/yq)
+
 
 
 
