@@ -11,9 +11,10 @@
 
 
 ```bash
-git clone --branch master --depth 1 https://gh-proxy.com/https://github.com/kxf-scut/clash-for-linux.git \
-  && cd clash-for-linux \
-  && sudo bash install.sh
+clone --branch master --depth 1 https://gh-proxy.com/https://github.com/kxf-scut/clash-for-linux.git
+cd clash-for-linux
+# 修改/work1/kxf/clash-for-linux/script/common.sh下的CLASH_BASE_DIR变量，一般指定为"/opt/clash/<用户名>"
+sudo bash install.sh
 ```
 
 ### 命令一览
