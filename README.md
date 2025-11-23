@@ -7,7 +7,7 @@
 - 用户权限：`root` 或 `sudo` 用户。
 - `shell` 支持：`bash`、`zsh`、`fish`。
 
-### 一键安装
+### 安装
 
 
 ```bash
