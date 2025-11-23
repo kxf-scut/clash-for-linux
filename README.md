@@ -1,37 +1,20 @@
 # Linux 一键安装 Clash
 
-![GitHub License](https://img.shields.io/github/license/nelvko/clash-for-linux-install)
-![GitHub top language](https://img.shields.io/github/languages/top/nelvko/clash-for-linux-install)
-![GitHub Repo stars](https://img.shields.io/github/stars/nelvko/clash-for-linux-install)
-
-![preview](resources/preview.png)
-
-- 默认安装 `mihomo` 内核，[可选安装](https://github.com/nelvko/clash-for-linux-install/wiki/FAQ#%E5%AE%89%E8%A3%85-clash-%E5%86%85%E6%A0%B8) `clash`。
-- 支持使用 [subconverter](https://github.com/tindy2013/subconverter) 进行本地订阅转换。
-- 多架构支持，适配主流 `Linux` 发行版：`CentOS 7.6`、`Debian 12`、`Ubuntu 24.04.1 LTS`。
-
 ## 快速开始
 
 ### 环境要求
 
-- 用户权限：`root` 或 `sudo` 用户。普通用户请戳：[#91](https://github.com/nelvko/clash-for-linux-install/issues/91)
+- 用户权限：`root` 或 `sudo` 用户。
 - `shell` 支持：`bash`、`zsh`、`fish`。
 
 ### 一键安装
 
-下述命令适用于 `x86_64` 架构，其他架构请戳：[一键安装-多架构](https://github.com/nelvko/clash-for-linux-install/wiki#%E4%B8%80%E9%94%AE%E5%AE%89%E8%A3%85-%E5%A4%9A%E6%9E%B6%E6%9E%84)
 
 ```bash
-git clone --branch master --depth 1 https://gh-proxy.com/https://github.com/nelvko/clash-for-linux-install.git \
-  && cd clash-for-linux-install \
+git clone --branch master --depth 1 https://gh-proxy.com/https://github.com/kxf-scut/clash-for-linux.git \
+  && cd clash-for-linux \
   && sudo bash install.sh
 ```
-
-> 如遇问题，请在查阅[常见问题](https://github.com/nelvko/clash-for-linux-install/wiki/FAQ)及 [issue](https://github.com/nelvko/clash-for-linux-install/issues?q=is%3Aissue) 未果后进行反馈。
-
-- 上述克隆命令使用了[加速前缀](https://gh-proxy.com/)，如失效请更换其他[可用链接](https://ghproxy.link/)。
-- 默认通过远程订阅获取配置进行安装，本地配置安装详见：[#39](https://github.com/nelvko/clash-for-linux-install/issues/39)
-- 没有订阅？[click me](https://次元.net/auth/register?code=oUbI)
 
 ### 命令一览
 
@@ -111,7 +94,6 @@ $ clashupdate log
 
 - `clashupdate` 会记住上次更新成功的订阅链接，后续执行无需再指定。
 - 可通过 `crontab -e` 修改定时更新频率及订阅链接。
-- 通过配置文件进行更新：[pr#24](https://github.com/nelvko/clash-for-linux-install/pull/24#issuecomment-2565054701)
 
 ### `Tun` 模式
 
@@ -150,10 +132,6 @@ $ clashmixin -r
 sudo bash uninstall.sh
 ```
 
-## 常见问题
-
-[wiki](https://github.com/nelvko/clash-for-linux-install/wiki/FAQ)
-
 ## 引用
 
 - [Clash 知识库](https://clash.wiki/)
@@ -164,21 +142,5 @@ sudo bash uninstall.sh
 - [yacd: Web 控制台](https://github.com/haishanh/yacd)
 - [yq: 处理 yaml](https://github.com/mikefarah/yq)
 
-## Star History
 
-<a href="https://www.star-history.com/#nelvko/clash-for-linux-install&Date">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=nelvko/clash-for-linux-install&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=nelvko/clash-for-linux-install&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=nelvko/clash-for-linux-install&type=Date" />
- </picture>
-</a>
 
-## Thanks
-
-[@鑫哥](https://github.com/TrackRay)
-
-## 特别声明
-
-1. 编写本项目主要目的为学习和研究 `Shell` 编程，不得将本项目中任何内容用于违反国家/地区/组织等的法律法规或相关规定的其他用途。
-2. 本项目保留随时对免责声明进行补充或更改的权利，直接或间接使用本项目内容的个人或组织，视为接受本项目的特别声明。
