@@ -13,7 +13,9 @@
 ```bash
 clone --branch master --depth 1 https://gh-proxy.com/https://github.com/kxf-scut/clash-for-linux.git
 cd clash-for-linux
-# 修改/work1/kxf/clash-for-linux/script/common.sh下的CLASH_BASE_DIR变量，一般指定为"/opt/clash/<用户名>"
+```
+修改/work1/kxf/clash-for-linux/script/common.sh下的CLASH_BASE_DIR变量，一般指定为"/opt/clash/<用户名>"
+```bash
 sudo bash install.sh
 ```
 
@@ -77,6 +79,21 @@ $ clashsecret
 
 - 通过浏览器打开 Web 控制台，实现可视化操作：切换节点、查看日志等。
 - 若暴露到公网使用建议定期更换密钥。
+
+### 切换节点
+
+在${CLASH_BASE_DIR}/runtime.yaml下查看secret
+```bash
+$ SECRET=<secret> /work1/kxf/clash-for-linux/switch_node.sh "<节点名称>"
+h "<节点名称>"
+目标节点: 越南01【vip2】
+目标代理组: 自动选择
+控制器: http://127.0.0.1:9090
+使用 secret (长度: 6)
+请求 URL: ...
+HTTP 状态: 204
+切换请求成功。控制器返回:
+```
 
 ### 更新订阅
 
