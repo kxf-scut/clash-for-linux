@@ -22,7 +22,7 @@ ZIP_YQ=$(echo ${ZIP_BASE_DIR}/yq*)
 ZIP_SUBCONVERTER=$(echo ${ZIP_BASE_DIR}/subconverter*)
 ZIP_UI="${ZIP_BASE_DIR}/yacd.tar.xz"
 
-CLASH_BASE_DIR='/opt/clash'
+CLASH_BASE_DIR='/opt/clash/kxf'
 CLASH_SCRIPT_DIR="${CLASH_BASE_DIR}/$(basename $SCRIPT_BASE_DIR)"
 CLASH_CONFIG_URL="${CLASH_BASE_DIR}/url"
 CLASH_CONFIG_RAW="${CLASH_BASE_DIR}/$(basename $RESOURCES_CONFIG)"
